@@ -21,16 +21,16 @@ module cordic #(parameter WIDTH = 32, ITER = 16)(
 
     reg signed [WIDTH-1:0] atan_table [0:15];
     initial begin
-        atan_table[ 0] = 32'sd25736;
-        atan_table[ 1] = 32'sd15192;
-        atan_table[ 2] = 32'sd8027;
-        atan_table[ 3] = 32'sd4074;
-        atan_table[ 4] = 32'sd2045;
-        atan_table[ 5] = 32'sd1023;
-        atan_table[ 6] = 32'sd511;
-        atan_table[ 7] = 32'sd256;
-        atan_table[ 8] = 32'sd128;
-        atan_table[ 9] = 32'sd64;
+        atan_table[0] = 32'sd25736;
+        atan_table[1] = 32'sd15192;
+        atan_table[2] = 32'sd8027;
+        atan_table[3] = 32'sd4074;
+        atan_table[4] = 32'sd2045;
+        atan_table[5] = 32'sd1023;
+        atan_table[6] = 32'sd511;
+        atan_table[7] = 32'sd256;
+        atan_table[8] = 32'sd128;
+        atan_table[9] = 32'sd64;
         atan_table[10] = 32'sd32;
         atan_table[11] = 32'sd16;
         atan_table[12] = 32'sd8;
